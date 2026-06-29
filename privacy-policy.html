@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Nexo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #c8c8c8;
+      --text: #111111;
+      --heading1: #111111;
+      --heading2: #111111;
+      --card-bg: #f0f0f0;
+      --card-border: #e0e0e0;
+      --link: #377AFF;
+      --strong: #111111;
+      --toggle-bg: #e0e0e0;
+      --toggle-icon: "🌙";
+    }
+    [data-theme="dark"] {
+      --bg: #0d0d0d;
+      --text: #e0e0e0;
+      --heading1: #ffffff;
+      --heading2: #54B4FF;
+      --card-bg: rgba(255,255,255,0.05);
+      --card-border: rgba(255,255,255,0.1);
+      --link: #54B4FF;
+      --strong: #ffffff;
+      --toggle-bg: rgba(255,255,255,0.1);
+      --toggle-icon: "☀️";
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      transition: background 0.3s, color 0.3s;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 40px;
+      backdrop-filter: blur(10px);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--heading1);
+      line-height: 1.3;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--heading2);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    p { margin: 10px 0; }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    strong { color: var(--strong); font-weight: 600; }
+
+    ul {
+      margin: 10px 0 10px 20px;
+    }
+    ul li { margin-bottom: 6px; }
+
+    .meta {
+      font-size: 14px;
+      color: var(--text);
+      opacity: 0.6;
+      margin-top: 6px;
+    }
+
+    .toggle-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+      margin-left: 16px;
+      margin-top: 4px;
+      cursor: pointer;
+    }
+    .toggle-icon { font-size: 16px; }
+    .toggle-track {
+      width: 44px;
+      height: 24px;
+      background: var(--toggle-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      position: relative;
+      transition: background 0.3s;
+    }
+    .toggle-thumb {
+      width: 18px;
+      height: 18px;
+      background: #54B4FF;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: transform 0.3s;
+    }
+    [data-theme="light"] .toggle-thumb {
+      transform: translateX(20px);
+    }
+  </style>
+</head>
+<body data-theme="dark">
+
+  <div class="container">
+    <div class="header">
+      <div>
+        <h1>Privacy Policy</h1>
+        <div class="meta">Nexo &nbsp;·&nbsp; Last updated: June 2026</div>
+      </div>
+      <div class="toggle-wrap" onclick="toggleTheme()">
+        <span class="toggle-icon" id="toggleIcon">☀️</span>
+        <div class="toggle-track"><div class="toggle-thumb"></div></div>
+      </div>
+    </div>
+
+    <p>This Privacy Policy applies to Nexo, a live translation app. We respect your privacy. Nexo does not require registration or a user account, and we do not build advertising profiles about you.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>Nexo has no accounts and does not collect personal data to identify you. To provide its features, the app uses the following device capabilities:</p>
+    <ul>
+      <li><strong>Microphone</strong> — to capture your speech for transcription and translation. Audio is processed to produce a translation and is not retained after processing.</li>
+      <li><strong>Camera &amp; Photos</strong> — to recognize and translate text in images. Text recognition runs on your device; the recognized text may be sent for translation.</li>
+      <li><strong>Notifications</strong> — to deliver incoming messages and alerts. Notification settings are stored locally on your device.</li>
+    </ul>
+
+    <h2>2. Translation &amp; Network Data</h2>
+    <p>To translate, the text or speech you capture is sent over a secure connection to our translation service, processed, and returned to you as a translation. In live chat, your messages are relayed through our server to the other participant so they can be delivered and translated.</p>
+    <p>We use this content only to provide the translation and messaging features. We do not sell it, use it for advertising, or store it longer than needed to operate the service.</p>
+
+    <h2>3. How We Use Information</h2>
+    <p>We use the information involved only to:</p>
+    <ul>
+      <li>Provide voice, text, photo, and chat translation</li>
+      <li>Deliver messages between participants</li>
+      <li>Respond to your support requests and improve the app</li>
+    </ul>
+    <p>We do not sell, rent, or share your personal data with third parties.</p>
+
+    <h2>4. Data Storage</h2>
+    <p>Your translation history, chats, and app settings are stored locally on your device. You can clear your history at any time from the app menu. Email messages you send to support may be stored for support purposes only.</p>
+
+    <h2>5. Push Notifications</h2>
+    <p>Nexo uses Firebase Cloud Messaging (Google) to deliver messages while the app is in the background. A device push token is processed solely to route these notifications to your device.</p>
+
+    <h2>6. Subscriptions</h2>
+    <p>Nexo offers optional auto-renewable subscriptions (monthly and yearly) via the App Store or Google Play. Purchases are processed by the respective store; we do not receive your payment card details.</p>
+    <p>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period. You can manage or cancel your subscription in your Apple ID or Google Play account settings at any time.</p>
+
+    <h2>7. Security</h2>
+    <p>We take reasonable measures to protect data in transit. However, no method of transmission over the internet is 100% secure.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>Nexo is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>9. Data Deletion</h2>
+    <p>You can delete locally stored data by clearing your history in the app or uninstalling Nexo. You may also request assistance by contacting us at <a href="mailto:ipowerstore44@gmail.com">ipowerstore44@gmail.com</a>.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at: <strong><a href="mailto:ipowerstore44@gmail.com">ipowerstore44@gmail.com</a></strong></p>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('toggleIcon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        icon.textContent = '🌙';
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.textContent = '☀️';
+      }
+    }
+  </script>
+</body>
+</html>
