@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Support — UpMind</title>
+  <title>Support — Nexo</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -13,26 +13,26 @@
       --heading2: #111111;
       --card-bg: #f0f0f0;
       --card-border: #e0e0e0;
-      --link: #7C3AED;
+      --link: #377AFF;
       --strong: #111111;
       --toggle-bg: #e0e0e0;
       --muted: rgba(0,0,0,0.5);
-      --accent-bg: rgba(124,58,237,0.08);
-      --accent-border: rgba(124,58,237,0.2);
+      --accent-bg: rgba(55,122,255,0.08);
+      --accent-border: rgba(55,122,255,0.2);
     }
     [data-theme="dark"] {
       --bg: #0d0d0d;
       --text: #e0e0e0;
       --heading1: #ffffff;
-      --heading2: #A78BFA;
+      --heading2: #54B4FF;
       --card-bg: rgba(255,255,255,0.05);
       --card-border: rgba(255,255,255,0.1);
-      --link: #A78BFA;
+      --link: #54B4FF;
       --strong: #ffffff;
       --toggle-bg: rgba(255,255,255,0.1);
       --muted: rgba(255,255,255,0.4);
-      --accent-bg: rgba(167,139,250,0.08);
-      --accent-border: rgba(167,139,250,0.25);
+      --accent-bg: rgba(84,180,255,0.08);
+      --accent-border: rgba(84,180,255,0.25);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -95,7 +95,6 @@
     ul { margin: 10px 0 10px 20px; }
     ul li { margin-bottom: 6px; }
 
-    /* Theme toggle */
     .toggle-wrap {
       display: flex;
       align-items: center;
@@ -118,7 +117,7 @@
     .toggle-thumb {
       width: 18px;
       height: 18px;
-      background: #A78BFA;
+      background: #54B4FF;
       border-radius: 50%;
       position: absolute;
       top: 2px;
@@ -127,7 +126,6 @@
     }
     [data-theme="light"] .toggle-thumb { transform: translateX(20px); }
 
-    /* Contact box at top */
     .contact-top {
       margin-top: 4px;
       padding: 20px 24px;
@@ -142,7 +140,6 @@
       margin-top: 4px;
     }
 
-    /* FAQ items */
     .faq-item {
       padding: 16px 0;
       border-bottom: 1px solid var(--card-border);
@@ -155,14 +152,12 @@
     }
     .faq-a { color: var(--text); opacity: 0.85; }
 
-    /* Resources list */
     .resources-list {
       margin: 10px 0 10px 20px;
       padding: 0;
     }
     .resources-list li { margin-bottom: 6px; }
 
-    /* Still need help */
     .help-box {
       margin-top: 36px;
       padding: 20px 0 0 0;
@@ -177,7 +172,7 @@
     <div class="page-header">
       <div>
         <h1>Support</h1>
-        <div class="meta">UpMind &nbsp;·&nbsp; We're here to help</div>
+        <div class="meta">Nexo &nbsp;·&nbsp; We're here to help</div>
       </div>
       <div class="toggle-wrap" onclick="toggleTheme()">
         <span class="toggle-icon" id="toggleIcon">☀️</span>
@@ -194,36 +189,46 @@
 
     <div class="faq-item">
       <div class="faq-q">How do I cancel my subscription?</div>
-      <div class="faq-a">Go to your device <strong>Settings → Apple ID → Subscriptions</strong> (iOS) or <strong>Google Play → Subscriptions</strong> (Android), find UpMind and tap Cancel. Your access continues until the end of the current billing period.</div>
+      <div class="faq-a">Go to your device <strong>Settings → Apple ID → Subscriptions</strong> (iOS) or <strong>Google Play → Subscriptions</strong> (Android), find Nexo and tap Cancel. Your access continues until the end of the current billing period.</div>
     </div>
 
     <div class="faq-item">
       <div class="faq-q">How do I restore my purchase?</div>
-      <div class="faq-a">Open UpMind, go to the subscription screen and tap <strong>Restore Purchase</strong>. Make sure you are signed in with the same Apple ID or Google account you used when purchasing.</div>
+      <div class="faq-a">Open Nexo, go to the subscription screen and tap <strong>Restore Purchase</strong>. Make sure you are signed in with the same Apple ID or Google account you used when purchasing.</div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-q">Is my data backed up?</div>
-      <div class="faq-a">All data (tasks, habits, finance, sport, settings) is stored <strong>locally on your device</strong>. No data is sent to any server. If you delete the app or reset your device, your data will be lost.</div>
+      <div class="faq-q">How does live chat translation work?</div>
+      <div class="faq-a">Both participants open Nexo and join the same session. Each person speaks or types in their language, and Nexo translates messages in real time so both sides can read and hear the conversation in their own language.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Why is my translation inaccurate?</div>
+      <div class="faq-a">Translations are generated automatically by AI and may occasionally be imperfect, especially with accents, technical terms, or informal speech. For critical communication — legal, medical, or financial — always verify with a qualified human translator.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Is my data stored on your servers?</div>
+      <div class="faq-a">Your translation history and app settings are stored <strong>locally on your device</strong>. Chat messages are relayed through our servers only to deliver the conversation and are not retained longer than necessary to provide the service. If you delete the app or reset your device, local history will be lost.</div>
     </div>
 
     <div class="faq-item">
       <div class="faq-q">How do I delete my data?</div>
-      <div class="faq-a">Uninstalling the app removes all local data. If you submitted anything via Contact Us, email us and we will delete it promptly.</div>
+      <div class="faq-a">You can clear your translation history from the app menu at any time. Uninstalling Nexo removes all locally stored data. If you submitted feedback or contacted support, email us and we will delete the information associated with your request as soon as reasonably possible, unless we are required to retain it by law.</div>
     </div>
 
     <div class="faq-item">
       <div class="faq-q">The app is not working correctly. What should I do?</div>
-      <div class="faq-a">Try restarting the app or reinstalling it. If the issue persists, contact us with a description of the problem, your device model, and OS version.</div>
+      <div class="faq-a">Try restarting the app or reinstalling it. If the issue persists, contact us with a description of the problem, your device model, and OS version — we will look into it as soon as possible.</div>
     </div>
 
     <h2>Subscription</h2>
-    <p>UpMind offers optional auto-renewable subscriptions (monthly and yearly) via the App Store or Google Play Store. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period.</p>
+    <p>Nexo offers optional auto-renewable subscriptions (monthly and yearly) via the App Store or Google Play Store. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period.</p>
     <p>To manage or cancel: <strong>Apple ID Settings → Subscriptions</strong> or <strong>Google Play → Subscriptions</strong>.</p>
     <p>For refund requests, visit <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> (iOS) or the Google Play Help Center (Android).</p>
 
     <h2>Privacy</h2>
-    <p>No personal data is sent to any server. All app data is stored locally on your device only.</p>
+    <p>Nexo does not require registration and does not collect personal information for advertising or profiling. Translation content is processed by trusted third-party providers solely to deliver the service. For full details, see our <a href="privacy-policy.html">Privacy Policy</a>.</p>
 
     <h2>Other Resources</h2>
     <ul class="resources-list" style="list-style: disc;">
